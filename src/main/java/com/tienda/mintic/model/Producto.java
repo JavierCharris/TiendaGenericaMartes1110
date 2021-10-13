@@ -20,11 +20,11 @@ public class Producto {
 	@JoinColumn(nullable = false) 
 	private Proveedor nit;
 
-	private String precio_compra;
+	private Double precio_compra;
 
-	private String ivacompra;
+	private Double ivacompra;
 	
-	private String precio_venta;
+	private Double precio_venta;
 
 	public Long getCodigo() {
 		return codigo;
@@ -50,30 +50,31 @@ public class Producto {
 		this.nit = nit;
 	}
 
-	public String getPrecio_compra() {
+	public Double getPrecio_compra() {
 		return precio_compra;
 	}
 
-	public void setPrecio_compra(String precio_compra) {
+	public void setPrecio_compra(Double precio_compra) {
 		this.precio_compra = precio_compra;
 	}
 
-	public String getIvacompra() {
+	public Double getIvacompra() {
 		return ivacompra;
 	}
 
-	public void setIvacompra(String ivacompra) {
+	public void setIvacompra(Double ivacompra) {
 		this.ivacompra = ivacompra;
 	}
 
-	public String getPrecio_venta() {
+	public Double getPrecio_venta() {
 		return precio_venta;
 	}
 
-	public void setPrecio_venta(String precio_venta) {
+	public void setPrecio_venta(Double precio_venta) {
 		this.precio_venta = precio_venta;
 	}
 
+	
 	
 	
 	

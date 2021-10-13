@@ -23,6 +23,11 @@ public class AppController {
 		return "error";
 	}
 	
+	@GetMapping("/productos")
+	public String productos() {
+		return "productos";
+	}
+	
 	@GetMapping("/salir")
 	public String salir() {
 		return "salir";
@@ -44,7 +49,7 @@ public class AppController {
 		String usuario = req.getParameter("usuario");
 		String password = req.getParameter("password");
 		
-		if(usuario.equals("admininicial") && password.equals("admin12345") ) {
+		if(usuario.equals("1") && password.equals("1") ) {
 			return "menu";
 		}else {
 			return "error";
